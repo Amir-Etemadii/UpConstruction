@@ -42,8 +42,9 @@ INSTALLED_APPS = [
     'django_cleanup.apps.CleanupConfig',
 
     # my_apps
-    'home',
+    'home.apps.HomeConfig',
     'account.apps.AccountConfig',
+    'blog.apps.BlogConfig',
 ]
 
 AUTH_USER_MODEL = 'account.CustomUser'

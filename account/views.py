@@ -73,4 +73,4 @@ def profile_view(request):
         user.save()
         return redirect('home:index')
 
-    return render(request, 'account/profile.html', {})
+    return render(request, 'account/profile.html', {'user_name':request.user.username})
